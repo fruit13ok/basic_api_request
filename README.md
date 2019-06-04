@@ -9,6 +9,8 @@
 
 ## Question:
 - Display the current weather info on the page. I use https://fcc-weather-api.glitch.me/ to get weather data.
+- ![before request](./pic1.png)
+- ![after request](./pic2.png)
 
 ## Requirements:
 - Use Javascript for the frontend and ExpressJS for the backend.

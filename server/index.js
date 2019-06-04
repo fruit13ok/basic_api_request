@@ -33,14 +33,7 @@ app.listen(port, () => {
 // return JSON data or error object, request weather api
 // I use helper function, optional, you can do request inside the route
 const getWeather = async (url) => {
-    try {
-        const response = await fetch(url);
-        const json = await response.json();
-        return json;
-    }catch (error) {
-        console.log(error);
-        return error;
-    }
+    
 }
 
 // ROUTES
@@ -65,13 +58,4 @@ app.get('/api', async function (req, res) {
     //          if error
     //              pass a message as response to front end
 
-    let latitude = req.query.latitude;
-    let longitude = req.query.longitude;
-    let url = `https://fcc-weather-api.glitch.me/api/current?lat=${latitude}&lon=${longitude}`;
-    let data = await getWeather(url);
-    if(data){
-        res.status(200).json(data);
-    }else{
-        res.status(400).json("error has occured");
-    }
 })
