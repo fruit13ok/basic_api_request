@@ -25,7 +25,9 @@ const getCurLocation = () => {
     //      If you use POST request you can change the given codes.
     // if error 
     //      append error message to latitude and longitude to html
-
+    /*
+        your code here
+    */
 }
 
 // 2). Front end request to back end
@@ -43,7 +45,9 @@ const getWeather = async (backendRoute) => {
     //  if error
     //      append a backend response error message to html
     //      append error message to weather data to html
-    
+    /*
+        your code here
+    */
 }
 
 // start the request

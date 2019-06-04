@@ -11,9 +11,8 @@ const app = express()
 const port = process.env.PORT || 8000
 
 // MIDDLEWARE
-// either way will point to static folder to find index.html
+// point to static folder to find index.html
 // run script will start server/index.js
-// app.use(express.static('public'));
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
@@ -33,15 +32,15 @@ app.listen(port, () => {
 // return JSON data or error object, request weather api
 // I use helper function, optional, you can do request inside the route
 const getWeather = async (url) => {
-    
+    /*
+        your code here
+    */
 }
 
 // ROUTES
 // root
 app.get('/', function (req, res) {
     res.send('hello world');
-    // this file structure index.js is not on top folder, so don't use direct file
-    // res.sendFile(__dirname + '/public/index.html');
 })
 
 // 3). Back end request Weather API
@@ -57,5 +56,7 @@ app.get('/api', async function (req, res) {
     //              pass JSON data as response to front end
     //          if error
     //              pass a message as response to front end
-
+    /*
+        your code here
+    */
 })

@@ -1,5 +1,4 @@
 # basic_api_request
-#### by Yi Liu
 
 ## To run:
 1) Run `git clone https://github.com/fruit13ok/basic_api_request.git` in the target directory
@@ -22,7 +21,7 @@
 
 ## Detail instruction:
 - Inside the project you will find 2 files `app.js` for frontend, `index.js` for backend.
-- Use the inline comment as a guide.
+- Use the inline comment as a guide. Look for /* your code here */
 - If you like to do it your way, you can change the given code.
 
 ## Solution:
